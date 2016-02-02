@@ -31,5 +31,6 @@ public class Pood {
 
         System.out.println("Klient ostis järgmised tooted: " + kassa.votaTooted());
         System.out.println("Tooteid on kokku: " + kassa.votaToodeteArv());
+
     }
 }

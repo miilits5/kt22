@@ -1,4 +1,8 @@
+import com.sun.deploy.util.ArrayUtil;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * if, while, int[]
@@ -20,7 +24,23 @@ public class TudengidYleKeskmise {
     // Siia meetodi sisse kirjuta lahendus.
     private static int yleKeskmise(int[] ints) {
 
-        return 0;
-    }
+            int summa = 0;
 
-}
+            for (int hinne : ints) {
+                summa += hinne > 60 ? 60 : hinne;
+            }
+
+            double keskmine = summa * 1.0 / ints.length;
+            int count = 0;
+
+            for (int hinne : ints) {
+                if (hinne > keskmine) {
+                    count++;
+                }
+
+            }
+        System.out.println("Niipalju tudengeid sai üles keskmise:");
+            return count;
+        }
+
+    }
