@@ -114,4 +114,29 @@ public class tint {
  System.out.println(kasTintiOn);
  }
  }
+
+
+
+
+ public String []otsiEsimeseTaheJargi(String t2ht){
+
+ char esimeneT2ht = t2ht.charAt(0);
+
+ int count = 0;
+
+ ArrayList<String> koopia = new ArrayList<>();
+
+ for (int i = 0; i < sonad.size(); i++) {
+ if (sonad.get(i).charAt(0) == esimeneT2ht) {
+ koopia.add(sonad.get(i));
+ count++;
+ }
+ }
+
+ String[]tulemus = new String[count];
+ for (int i = 0; i < koopia.size() ; i++) {
+ tulemus[i] = koopia.get(i);
+ }
+ return tulemus;
+ }
 */

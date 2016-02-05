@@ -39,3 +39,4 @@ class KuulusNumber {
         System.out.println(moodid);
     }
 }
+
